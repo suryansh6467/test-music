@@ -25,7 +25,7 @@ function Background() {
 
     return (
         <>
-            <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
+            <div className="fixed inset-0 z-10 overflow-hidden pointer-events-none">
                 {stars.map((star) => (
                     <motion.div
                         key={star.id}
@@ -50,10 +50,10 @@ function Background() {
             </div>
 
             <div
-                className="absolute inset-0 -z-1"
+                className="fixed inset-0 z-0"
                 style={{
                     background:
-                        "radial-gradient(125% 125% at 50% 90%, #000000 40%, #30001a 100%)",
+                        "radial-gradient(125% 125% at 50% 90%, #050306 38%, #180711 68%, #4a1234 100%)",
                 }}
             />
         </>
